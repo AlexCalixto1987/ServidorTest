@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3000;
 
 // Base de datos simulada (array en memoria)
 let registeredTokens = [];
-let device = []
-let model = []
+let registeredDevice = [];
+let registeredModel = [];
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -27,13 +27,13 @@ app.post("/register-token", (req, res) => {
         console.log("Token registrado:", token);
     }
 
-    if (!device.includes(device)) {
-        device.push(device);
+    if (!registeredDevice.includes(device)) {
+        registeredDevice.push(device);
         console.log("device: ", device);
     }
 
-    if (!model.includes(ref01)) {
-        model.push(ref01);
+    if (!registeredDevice.includes(ref01)) {
+        registeredDevice.push(ref01);
         console.log("model:", ref01);
     }
 
