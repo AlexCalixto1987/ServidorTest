@@ -16,6 +16,7 @@ app.post("/register-token", (req, res) => {
     const { token } = req.body;
 
     if (!token) {
+        console.log("TOKEN REQUERIDO")
         return res.status(400).json({ error: "Token requerido" });
     }
 
